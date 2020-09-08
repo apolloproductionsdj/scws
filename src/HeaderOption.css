@@ -1,0 +1,33 @@
+.headerOption {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.headerOption > .MuiSvgIcon-root {
+    padding: 20px;
+    color: gray;
+}
+
+.headerOption:hover > .MuiSvgIcon-root {
+    padding: 20px;
+    color: orange;
+}
+
+
+
+.headerOption > h2 {
+    font-weight: 800;
+    font-size: 20px;
+    margin-right: 20px;
+    color: gray;
+}
+
+
+.headerOption:hover {
+    background-color: #eceeec;
+    border-radius: 30px;
+    color: orange;
+    transition: color 100ms ease-out;
+}
+

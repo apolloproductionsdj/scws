@@ -7,6 +7,7 @@ import BuildIcon from '@material-ui/icons/Build';
 import LocalCarWashIcon from '@material-ui/icons/LocalCarWash';
 import InvertColorsIcon from '@material-ui/icons/InvertColors';
 import InfoIcon from '@material-ui/icons/Info';
+import HeaderOption from './HeaderOption';
 
 
 function Header() {
@@ -24,29 +25,12 @@ function Header() {
             </div>
           </div>
           <div className="header__right">
-            <div className="header__option">
-              <HomeIcon fontSize="Large" />
-              <h3>Home</h3>
-            </div>
-            <div className="header__option">
-              <LocalCarWashIcon fontSize="Large" />
-              <h3>Service</h3>
-            </div>
-            <div className="header__option">
-              <BuildIcon fontSize="Large" />
-              <h3>Equipment</h3>
-            </div>
-            <div className="header__option">
-              <InvertColorsIcon fontSize="Large" />
-              <h3>Chemical</h3>
-            </div>
-            <div className="header__option">
-              <InfoIcon fontSize="Large" />
-              <h3>About Us</h3>
-            </div>
-          </div>
-            
-            
+              <HeaderOption Icon={HomeIcon}text="Home" />
+              <HeaderOption Icon={LocalCarWashIcon} text="Service" />
+              <HeaderOption Icon={BuildIcon} text="Equipment" />
+              <HeaderOption Icon={InvertColorsIcon} text="Chemical" />
+              <HeaderOption Icon={InfoIcon} text="About Us" />
+          </div>   
         </div>
     )
 }
